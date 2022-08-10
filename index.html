@@ -1,4 +1,25 @@
 <html>
+
+<style>
+    button {
+        background: linear-gradient(2.08deg, #FF9320 -0.8%, rgba(255, 147, 32, 0) 79.94%), #FAC02C;
+        box-shadow: -3px 5px 10px 1px rgba(0, 0, 0, 0.25);
+        border: none;
+        color: white;
+        padding: 8px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        border-radius: 12px;
+    }
+    button:hover {
+        background: linear-gradient(179.26deg, #ffffff70 0.63%, rgba(255, 147, 32, 0) 99.56%), #FAC02C;
+        box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.3);
+    }
+</style>
+
 <SCRIPT>
     var pos = 0;
     const pacArray = [
@@ -66,7 +87,7 @@
         pacMen.push(makePac()); // add a new PacMan (push)
     } // if click on start game multiple times it keeps propagating
 
-    function reset(){
+   /* function reset(){
         for(let i = 0 ; i <= pacMen.length ; i++){
             pacMen.forEach((item) => {
                 delete item.position;
@@ -76,14 +97,14 @@
             pacMen.pop();
             delete document.getElementById('img');
         } // this is only stopping them, not deleting them :(
-    }
+    } */
 </SCRIPT>
 
 <body>
     <div id='game'>
         <button onclick='makeOne()' width='200' height='30'>Add PacMan</button>
         <button onclick='update()' width='200' height='30'>Start Game</button>
-        <button onclick='reset()' width='200' height='30'>Restart</button>
+        <!-- <button onclick='reset()' width='200' height='30'>Restart</button> -->
     </div>
 </body>
 
