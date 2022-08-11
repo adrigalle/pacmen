@@ -1,9 +1,15 @@
-# pacmen
-Factory for making pacmen
-You are given a starter.html code.
-When button "make one" is pressed you need to complete the code 
-to position the new pacman image and add it to the "game" div. It is then added to the array of pacmen, which keeps track of the position and velocity of each pacman.
-You also need to make each pacman bounce off any wall it hits. 
-Start by getting at least one pacman positioned and viewable. 
+# PacMen
+
+## Desription
+
+This is a little exercise that has an "add PacMen" button that you can press as many times as youd like to add more pacmen to the screen. Once they are added you can press start and they will all just start moving and bouncing off that walls at varying velocities. 
+
+## Roadmap
+
+In the future I would love to make the pacmen change direction and face to the left when they go in the -x axis
+
+## License
+
+This is an open source project, most of the code was provided by MIT Coding Program
 
 <img src="PacMan1.png">
